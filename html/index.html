@@ -1,32 +1,30 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
-
+  <link href='/main.css'>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src='../js/guessingGame.js'></script>
 </head>
 <body>
-  <header>
-    <h1>The Guessing Game</h1>
-    <ul>
-      <li><button type="button">Button 1</button></li>
-      <li><button type="button">Button 2</button></li>
-      <li><button type="button">Button 3</button></li>
-
-    </ul>
-  </header>
+<div class="container">
+  <h1>Matt's Guessing Game Application</h1>
+  <h3>Here are the rules:</h3>
+  <p>You get X amount of tries to guess the secret number.</p>
 
 
-  <article>
-    <h2><u>Enter Your Guess Below:</u></h2>
-    <form action="demo_form.asp">
-  Number: <input type="text" name="fname"><br>
+  <input id="field1" class="field" input type="number">
 
-  <input type="submit" value="Submit">
-</form>
-  </article>
+  <button class="submit">Submit Guess</button>
 
-  <script>
-    $("button").on("click", function() {
-      alert("Clicked!");
-    });
-  </script>
+  <button class="hint">Hint</button>
+
+  <button class="retry">Restart</button>
+
+
+</div>
+
+<p class="playerFeedback"></p>
+
+
 </body>
+</html>
